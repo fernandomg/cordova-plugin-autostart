@@ -37,7 +37,7 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <receiver
+            <!--receiver
                 android:name="com.tonikorin.cordova.plugin.autostart.BootCompletedReceiver" android:enabled="false">
                 <intent-filter>
                     <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -48,7 +48,7 @@
                 <intent-filter>
                     <action android:name="android.intent.action.USER_PRESENT" />
                 </intent-filter>
-            </receiver>
+            </receiver-->
             <receiver
                 android:name="com.tonikorin.cordova.plugin.autostart.PackageReplacedReceiver" android:enabled="true">
                 <intent-filter>
@@ -63,7 +63,7 @@
 
         <source-file src="src/android/BootCompletedReceiver.java" 	target-dir="src/com/tonikorin/cordova/plugin/autostart" />
         <source-file src="src/android/UserPresentReceiver.java"   	target-dir="src/com/tonikorin/cordova/plugin/autostart" />
-        <source-file src="src/android/PackageReplacedReceiver.java" target-dir="src/com/tonikorin/cordova/plugin/autostart" />
+        <source-file src="src/android/PackageReplacedReceiver.java"     target-dir="src/com/tonikorin/cordova/plugin/autostart" />
         <source-file src="src/android/AppStarter.java"            	target-dir="src/com/tonikorin/cordova/plugin/autostart" />
         <source-file src="src/android/AutoStart.java"             	target-dir="src/com/tonikorin/cordova/plugin/autostart" />
     </platform>
